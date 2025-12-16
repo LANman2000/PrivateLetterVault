@@ -1,0 +1,91 @@
+---
+// src/pages/index.astro
+import MainLayout from '../layouts/Layout.astro'; // adjust name/case to match your file
+const title = "Welcome, Love";
+---
+
+<MainLayout>
+  <main class="hero">
+    <h1 class="headline">
+      <span class="welcome">Welcome,</span>
+      <span class="love">Love</span>
+    </h1>
+
+    <p class="subtitle">A journey made for two hearts</p>
+
+    <a href="/page2" class="cta">Begin</a>
+
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot accent"></span>
+    </div>
+  </main>
+</MainLayout>
+
+<style>
+:root {
+  --bg-start: #5a001f;
+  --bg-mid: #7a0028;
+  --bg-end: #3a0f05;
+
+  --pink: #ff4f87;
+  --orange: #ff9a3c;
+  --cream: #f2d6a2;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at top right, var(--bg-mid), var(--bg-start), var(--bg-end));
+}
+
+.headline {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 600;
+  margin: 0;
+}
+
+.welcome { color: var(--pink); }
+.love { color: var(--orange); margin-left: 0.5rem; }
+
+.subtitle {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+}
+
+.cta {
+  margin-top: 2.5rem;
+  padding: 0.9rem 2.5rem;
+  border-radius: 999px;
+  background: var(--cream);
+  color: #2b1a00;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.dots {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff7aa8;
+  opacity: 0.5;
+}
+.dot.active { opacity: 1; }
+.dot.accent { background: #ffcc66; }
+</style>
