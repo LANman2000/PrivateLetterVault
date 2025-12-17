@@ -7,3 +7,11 @@
 body {
   font-family: system-ui, sans-serif;
 }
+
+@font-face {
+  font-family: 'DistantGalaxy';
+  src: url('/fonts/DistantGalaxy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

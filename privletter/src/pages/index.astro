@@ -1,12 +1,14 @@
 ---
 // src/pages/index.astro
 import MainLayout from '../layouts/Layout.astro'; // adjust name/case to match your file
+import '@fontsource/cedarville-cursive';
 const title = "Welcome, Love";
 ---
 
 <MainLayout>
   <main class="hero">
-    <h1 class="headline">
+    <h1 
+    class="headline">
       <span class="welcome">Welcome,</span>
       <span class="love">Love</span>
     </h1>
@@ -14,7 +16,6 @@ const title = "Welcome, Love";
     <p class="subtitle">A journey made for two hearts</p>
 
     <a href="/page2" class="cta">Begin</a>
-
     <div class="dots">
       <span class="dot active"></span>
       <span class="dot"></span>
@@ -45,6 +46,7 @@ const title = "Welcome, Love";
 }
 
 .headline {
+  //font-family: 'Cedarville Cursive', cursive;
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 600;
   margin: 0;
