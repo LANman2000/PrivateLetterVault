@@ -1,6 +1,6 @@
 ---
 // src/pages/index.astro
-import MainLayout from '../layouts/Layout.astro'; // adjust name/case to match your file
+import MainLayout from '../layouts/Layout.astro';
 import '@fontsource/cedarville-cursive';
 const title = "Welcome, Love";
 ---
@@ -24,11 +24,11 @@ const title = "Welcome, Love";
   </main>
 </MainLayout>
 
-<style>
+<style is:global>
 :root {
-  --bg-start: #5a001f;
-  --bg-mid: #7a0028;
-  --bg-end: #3a0f05;
+  --bg-start: #001f5a;
+  --bg-mid: #004a7a;
+  --bg-end: #0f053a;
 
   --pink: #ff4f87;
   --orange: #ff9a3c;
@@ -45,13 +45,6 @@ const title = "Welcome, Love";
   background: radial-gradient(circle at top right, var(--bg-mid), var(--bg-start), var(--bg-end));
 }
 
-.headline {
-  //font-family: 'Cedarville Cursive', cursive;
-  font-size: clamp(3rem, 8vw, 6rem);
-  font-weight: 600;
-  margin: 0;
-}
-
 .welcome { color: var(--pink); }
 .love { color: var(--orange); margin-left: 0.5rem; }
 
@@ -61,16 +54,6 @@ const title = "Welcome, Love";
   font-size: 1rem;
 }
 
-.cta {
-  margin-top: 2.5rem;
-  padding: 0.9rem 2.5rem;
-  border-radius: 999px;
-  background: var(--cream);
-  color: #2b1a00;
-  text-decoration: none;
-  font-weight: 500;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
 .cta:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);

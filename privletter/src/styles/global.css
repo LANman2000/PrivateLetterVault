@@ -3,9 +3,32 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Optional: your custom Valentine theme tweaks */
 body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: system-ui, sans-serif;
+  background: linear-gradient(to bottom right, var(--bg-start), var(--bg-mid), var(--bg-end));
+  background-attachment: fixed;
+  margin: 0;
+}
+
+ :root {
+  --bg-start: #001f5a;
+  --bg-mid: #004a7a;
+  --bg-end: #0f053a;
+
+  --pink: #ff4f87;
+  --orange: #ff9a3c;
+  --cream: #f2d6a2;
+}
+
+.headline {
+  //font-family: 'Cedarville Cursive', cursive;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 600;
+  margin: 0;
 }
 
 @font-face {
@@ -14,4 +37,15 @@ body {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+.cta {
+  margin-top: 2.5rem;
+  padding: 0.9rem 2.5rem;
+  border-radius: 999px;
+  background: var(--cream);
+  color: #2b1a00;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }

@@ -5,13 +5,13 @@ import '../styles/global.css';
 ---
 
 <MainLayout pageClass="journey">
-  <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-rose-50 via-pink-50 to-amber-50 dark:from-rose-950 dark:via-pink-950 dark:to-amber-950 px-4">
+  
     <div class="text-center space-y-8 max-w-2xl mx-auto animate-fade-in">
       <div class="space-y-6">
         <h1 class="text-5xl md:text-7xl font-heading font-bold text-foreground">
-          Our Journey Begins
+          Page2
         </h1>
-        <p class="text-lg md:text-xl text-muted-foreground font-body leading-relaxed">
+        <p class="headline:cursive">
           Every great love story has a beginning. This is ours. A space created with love, 
           filled with memories, and blessed with moments that make our hearts full.
         </p>
@@ -37,13 +37,9 @@ import '../styles/global.css';
         </div>
       </div>
 
-      <div class="pt-8">
-        <a 
-          href="/"
-          class="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors duration-300"
-         ← Back to welcome
-        >
-        
+      <div class="pt-4">
+        <a href="/" class="cta">
+        ← Back to welcome
         <a href="/page3" class="cta">Continue</a>
          
         </a>
@@ -67,4 +63,6 @@ import '../styles/global.css';
   .animate-fade-in {
     animation: fade-in 1s ease-out;
   }
+
+ 
 </style>
