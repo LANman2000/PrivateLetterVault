@@ -25,10 +25,17 @@ body {
 }
 
 .headline {
-  //font-family: 'Cedarville Cursive', cursive;
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 600;
   margin: 0;
+}
+
+.cursive {
+   font-family: 'Cedarville Cursive', cursive; 
+  }
+
+.times {
+  font-family: 'Noto Serif Tibetan Variable', serif;
 }
 
 @font-face {
@@ -49,3 +56,6 @@ body {
   font-weight: 500;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.welcome { color: var(--pink); }
+.love { color: var(--orange); margin-left: 0.5rem; }
