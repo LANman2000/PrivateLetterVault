@@ -6,6 +6,11 @@ export default defineConfig({
   site: 'http://localhost:4321',
 
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [
+      tailwindcss({
+        config: './tailwind.config.js'
+      })
+    ],
   },
 });
+
