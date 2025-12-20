@@ -1,0 +1,55 @@
+<!-- src/pages/page2.astro -->
+---
+import MainLayout from '../layouts/Layout.astro';
+import '../styles/global.css';
+---
+
+<MainLayout pageClass="journey">
+    <div class="text-center space-y-8 max-w-2xl mx-auto animate-fade-in">
+      <div class="space-y-6">
+        <h1 class="text-5xl md:text-7xl font-heading font-bold text-foreground">
+          Wishes For You This Year
+        </h1>
+        <p class="text-lg md:text-xl text-muted-foreground font-body leading-relaxed">
+          Every great love story has a beginning. This is ours. A space created with love, 
+          filled with memories, and blessed with moments that make our hearts full.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
+        <div class="p-6 bg-card/50 backdrop-blur-sm rounded-2xl border border-border hover:scale-105 transition-transform duration-300">
+          <div class="text-4xl mb-4">💝</div>
+          <h3 class="text-xl font-heading font-semibold mb-2">Love</h3>
+          <p class="text-sm text-muted-foreground">The foundation of everything we share</p>
+        </div>
+      </div>
+
+      <div class="pt-8">
+        <a 
+          href="/"
+          class="cta"
+        >
+          ← Back to welcome
+        </a>
+        <a href="/page6" class="cta">Continue</a>
+      </div>
+    </div>
+  </div>
+</MainLayout>
+
+<style>
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-out;
+  }
+</style>
