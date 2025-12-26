@@ -13,9 +13,9 @@ const title = "Welcome, Love";
       <span class="love">Love</span>
     </h1>
 
-    <p class="subtitle">A journey made for two hearts</p>
+    <p class="subtitle">This  space  exists  just  for you</p>
 
-    <a href="/page2" class="cta">Begin</a>
+    <a href="/page2" class="cta">Begin your moment</a>
     <div class="dots">
       <span class="dot active"></span>
       <span class="dot"></span>
@@ -25,28 +25,17 @@ const title = "Welcome, Love";
 </MainLayout>
 
 <style is:global>
-:root {
-  --bg-start: #001f5a;
-  --bg-mid: #004a7a;
-  --bg-end: #0f053a;
-
-  --pink: #ff4f87;
-  --orange: #ff9a3c;
-  --cream: #f2d6a2;
-}
 
 .hero {
   min-height: 100vh;
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   background: radial-gradient(circle at top right, var(--bg-mid), var(--bg-start), var(--bg-end));
 }
-
-.welcome { color: var(--pink); }
-.love { color: var(--orange); margin-left: 0.5rem; }
 
 .subtitle {
   margin-top: 1rem;
